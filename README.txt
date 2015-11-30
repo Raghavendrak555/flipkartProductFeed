@@ -23,5 +23,7 @@ Please note: you may required to change the '$token' and '$user' to get this wor
 
 To know details of 
 How to change these variables $token and $user... what values should you assign to these variables????
+
 visit: "https://affiliate.flipkart.com/"
+
 
