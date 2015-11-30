@@ -4,8 +4,12 @@
  require dirname(__FILE__).'/insertData.php';   // for inserting data into the data basae
  require dirname(__FILE__).'/firstUrl.php';   // for getting first URL
  
+ // this is generated token by flipkart affiliate site(https://affiliate.flipkart.com/),
+ //  needed to access flipkart product feed api. 
+ // usually this token is valid for only 10 hours from the time its generated.
+ // to know more about how to access flipkart pruduct feed api.. please visit https://affiliate.flipkart.com/.
  $token = "36be5803fee3409eb6440919742e1af3";
- 
+ $user = "raghavend5";
  $url = getFirstURL($token);
  echo $url;
 
@@ -25,7 +29,7 @@
 
 // setting headers
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    'Fk-Affiliate-Id: raghavend5',
+    'Fk-Affiliate-Id: '.$user,
     'Fk-Affiliate-Token: '.$token
     ));
 
